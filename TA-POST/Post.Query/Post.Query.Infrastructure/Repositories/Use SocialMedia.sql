@@ -3,7 +3,7 @@ GO
 
 IF NOT EXISTS(SELECT * FROM sys.server_principals WHERE name ='SMUser')
 BEGIN
-    CREATE LOGIN SMUser WITH PASSWORD=N'justD0it!', DEFAULT_DATABASE=SocialMedia
+    CREATE LOGIN SMUser WITH PASSWORD=N'fakepass!', DEFAULT_DATABASE=SocialMedia
 END
 
 IF NOT EXISTS(SELECT * FROM sys.database_principals WHERE name='SMUser')
